@@ -8,19 +8,27 @@ export function Contact() {
       <h2 className="text-2xl font-semibold tracking-tight">
         Let&apos;s Connect
       </h2>
-      <p className="text-zinc-600 dark:text-zinc-400">
-        {/* TODO: replace the email/links below with your real contact info. */}
+      <p className="text-muted">
         Have an opportunity, a project, or just want to talk engineering?
         I&apos;d be happy to hear from you.
       </p>
       <div className="flex gap-4">
-        <a href="mailto:rixyportillo@gmail.com" className="underline underline-offset-4">
+        <a
+          href="mailto:rixyportillo@gmail.com"
+          className="text-accent underline underline-offset-4 transition-opacity hover:opacity-80"
+        >
           Email
         </a>
-        <a href="https://github.com/rixy-portillo" className="underline underline-offset-4">
+        <a
+          href="https://github.com/rixy-portillo"
+          className="text-accent underline underline-offset-4 transition-opacity hover:opacity-80"
+        >
           GitHub
         </a>
-        <a href="https://linkedin.com/in/rixyportillo" className="underline underline-offset-4">
+        <a
+          href="https://linkedin.com/in/rixyportillo"
+          className="text-accent underline underline-offset-4 transition-opacity hover:opacity-80"
+        >
           LinkedIn
         </a>
       </div>

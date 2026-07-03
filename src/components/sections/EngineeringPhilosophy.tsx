@@ -49,9 +49,12 @@ export function EngineeringPhilosophy() {
       </h2>
       <ul className="flex flex-col gap-6">
         {principles.map((principle) => (
-          <li key={principle.id} className="flex flex-col gap-1">
+          <li
+            key={principle.id}
+            className="flex flex-col gap-1 border-l-2 border-accent/40 pl-4"
+          >
             <h3 className="text-lg font-medium">{principle.title}</h3>
-            <p className="text-zinc-600 dark:text-zinc-400">
+            <p className="text-muted">
               {principle.description}
             </p>
           </li>

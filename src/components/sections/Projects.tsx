@@ -35,12 +35,15 @@ export function Projects() {
         {projects.map((project) => (
           <li key={project.id} className="flex flex-col gap-2">
             <h3 className="text-xl font-medium">{project.title}</h3>
-            <p className="text-zinc-600 dark:text-zinc-400">
-              {project.description}
-            </p>
-            <ul className="flex flex-wrap gap-2 text-sm text-zinc-500">
+            <p className="text-muted">{project.description}</p>
+            <ul className="flex flex-wrap gap-2">
               {project.stack.map((tech) => (
-                <li key={tech}>{tech}</li>
+                <li
+                  key={tech}
+                  className="rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-xs text-accent"
+                >
+                  {tech}
+                </li>
               ))}
             </ul>
           </li>
